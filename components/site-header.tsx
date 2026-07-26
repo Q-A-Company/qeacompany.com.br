@@ -11,7 +11,9 @@ const nav = [
   { label: "Quem somos", href: "#sobre" },
   { label: "Portfólio", href: "#portfolio" },
   { label: "Cases reais", href: "#cases" },
-  { label: "Depoimentos", href: "#depoimentos" },
+  { label: "Mídia", href: "/midia" },
+  { label: "Marketing", href: "/marketing" },
+  { label: "Soluções Digitais", href: "/solucoes-digitais" },
   { label: "Contato", href: "#contato" },
 ]
 
