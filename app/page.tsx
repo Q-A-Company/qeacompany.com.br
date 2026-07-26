@@ -43,7 +43,6 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <PillarsSection />
-        <ResultsSection />
         <PortfolioSection />
         <ProofSection />
         <TestimonialsSection />

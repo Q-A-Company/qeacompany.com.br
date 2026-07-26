@@ -72,7 +72,7 @@ export function HeroSection() {
           className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg"
         >
           Somos a {site.name}: mídia, marketing e soluções digitais para marcas que
-          querem crescer com estratégia — e provar resultado.
+          querem crescer com estratégia e provar resultado.
         </motion.p>
 
         <motion.div variants={item} className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">

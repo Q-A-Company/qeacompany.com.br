@@ -4,7 +4,7 @@ import { Reveal } from "@/components/reveal"
 
 export function ProofSection() {
   return (
-    <section className="border-t border-border px-5 py-24 md:px-8 md:py-32">
+    <section id="cases" className="border-t border-border px-5 py-24 md:px-8 md:py-32">
       <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2 md:gap-16">
         <Reveal>
           <span className="text-xs uppercase tracking-widest text-muted-foreground">Case real</span>

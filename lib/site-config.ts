@@ -14,7 +14,7 @@ export const site = {
   description:
     "A Q&A Company une produção audiovisual, marketing e tecnologia para ajudar empresas a serem vistas, lembradas e escolhidas. Estratégia de ponta a ponta, sem terceirizar o que importa.",
   logo: "/brand/logo-white.png",
-  whatsapp: "https://wa.me/5500000000000", // TODO: substituir pelo número real
+  whatsapp: "https://wa.me/5521965559712",
   email: "contato@qeacompany.com.br",
   social: {
     instagram: "https://instagram.com/qeacompany",
@@ -27,11 +27,11 @@ export const site = {
 // Contador de VGV (Valor Geral de Vendas) — atualize conforme cresce
 export const vgv = {
   // valor em reais (usado pelo contador animado)
-  value: 50_000_000,
+  value: 25_000_000,
   // como o número deve ser exibido depois de contar (unidade)
-  displayValue: 50,
+  displayValue: 25,
   displayUnit: "milhões",
-  label: "em imóveis vendidos com nossas estratégias",
+  label: "vendidos com nossas estratégias",
 }
 
 // Números / resultados (contadores animados)
@@ -48,14 +48,14 @@ export const pillars = [
     id: "01",
     title: "Mídia",
     description:
-      "Produção audiovisual que transforma atenção em resultado. Vídeos verticais e horizontais pensados para vender.",
+      "Produção audiovisual que transforma atenção em resultado. Vídeos verticais e horizontais institucionais ou para venda.",
     href: "/midia",
   },
   {
     id: "02",
     title: "Marketing",
     description:
-      "Estratégia, gestão de redes e tráfego pago para colocar a sua marca na frente das pessoas certas.",
+      "Gestão de redes e tráfego pago (Meta, Google Ads, TikTok Ads...) para colocar a sua marca na frente das pessoas certas.",
     href: "/marketing",
   },
   {
@@ -101,17 +101,17 @@ export const portfolio = [
 
 // Prova social real: caso vídeo → venda (respeitando LGPD nos prints)
 export const proofCase = {
-  context: "Apartamento parado no mercado havia mais de 4 meses.",
+  context: "Casa parada no mercado havia mais de 19 meses.",
   action:
-    "Produzimos um vídeo vertical destacando os diferenciais do imóvel e estruturamos a divulgação nas redes.",
-  result: "Vendido em 11 dias após a publicação do vídeo.",
+    "Produzimos um vídeo vertical destacando os diferenciais do imóvel e utilizando I.A para reformas!",
+  result: "Vendido em 34 dias após a publicação do vídeo.",
   // conversa estilizada (dados sensíveis omitidos conforme LGPD)
   conversation: [
-    { from: "client", text: "Cara, lembra daquele apê que tava encalhado?" },
-    { from: "us", text: "Lembro sim! O do vídeo vertical?" },
-    { from: "client", text: "Esse mesmo. VENDIDO 🎉" },
-    { from: "client", text: "O comprador falou que decidiu depois de ver o vídeo" },
-    { from: "us", text: "Isso é tudo! Parabéns 👏" },
+    { from: "client", text: "Lembra daquele Casa que tava encalhada?" },
+    { from: "us", text: "Lembro sim! O do vídeo da I.A?" },
+    { from: "client", text: "Essa mesma. VENDIDA!" },
+    { from: "client", text: "O cliente já estava aqui como Lead, mas só decidiu visitar após ver o vídeo, ele mesmo disse isso!" },
+    { from: "us", text: "Incrível! Parabéns pela venda! 👏" },
   ],
 }
 
@@ -119,20 +119,20 @@ export const proofCase = {
 export const testimonials = [
   {
     quote:
-      "O vídeo mudou completamente o jogo. Imóvel que estava parado saiu em menos de duas semanas.",
+      "Mais um apartamento vendido graças ao vídeo produzido por vocês!.",
     author: "Cliente do setor imobiliário",
     role: "Imobiliária parceira",
   },
   {
     quote:
-      "Profissionalismo do briefing à entrega. A estratégia de conteúdo trouxe leads muito mais qualificados.",
+      "A estratégia do Trafego trouxe leads realmente qualificados!",
     author: "Cliente do setor imobiliário",
-    role: "Construtora",
+    role: "Imobiliária parceira",
   },
   {
     quote:
-      "O app que desenvolveram organizou nossa operação inteira. Ganhamos velocidade em cada venda.",
+      "O app que desenvolveram organizou nossa pauta de corretores inteira. Ganhamos velocidade na distribuição das fichas.",
     author: "Cliente do setor imobiliário",
-    role: "Rede de corretores",
+    role: "Imobiliária parceira",
   },
 ]

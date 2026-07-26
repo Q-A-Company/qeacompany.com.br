@@ -8,9 +8,10 @@ import { site } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
 
 const nav = [
-  { label: "Mídia", href: "/midia" },
-  { label: "Marketing", href: "/marketing" },
-  { label: "Soluções Digitais", href: "/solucoes-digitais" },
+  { label: "Quem somos", href: "#sobre" },
+  { label: "Portfólio", href: "#portfolio" },
+  { label: "Cases reais", href: "#cases" },
+  { label: "Depoimentos", href: "#depoimentos" },
   { label: "Contato", href: "#contato" },
 ]
 

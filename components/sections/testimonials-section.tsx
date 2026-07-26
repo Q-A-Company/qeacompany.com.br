@@ -22,7 +22,7 @@ export function TestimonialsSection() {
   const current = testimonials[index]
 
   return (
-    <section className="border-t border-border px-5 py-24 md:px-8 md:py-32">
+    <section id="depoimentos" className="border-t border-border px-5 py-24 md:px-8 md:py-32">
       <div className="mx-auto max-w-4xl">
         <div className="flex items-center justify-between">
           <span className="text-xs uppercase tracking-widest text-muted-foreground">Depoimentos</span>

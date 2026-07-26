@@ -13,7 +13,7 @@ export function CtaSection() {
             Vamos fazer a sua marca vender mais?
           </h2>
           <p className="mt-6 max-w-md text-pretty leading-relaxed text-muted-foreground md:text-lg">
-            Conte o seu desafio. A gente responde com estratégia — e um plano para
+            Conte o seu desafio. A gente responde com estratégia e um plano para
             transformar atenção em resultado.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -41,10 +41,11 @@ export function CtaSection() {
 
 export function SiteFooter() {
   const nav = [
-    { label: "Mídia", href: "/midia" },
-    { label: "Marketing", href: "/marketing" },
-    { label: "Soluções Digitais", href: "/solucoes-digitais" },
-    { label: "Contato", href: "#contato" },
+  { label: "Quem somos", href: "#sobre" },
+  { label: "Portfólio", href: "#portfolio" },
+  { label: "Cases reais", href: "#cases" },
+  { label: "Depoimentos", href: "#depoimentos" },
+  { label: "Contato", href: "#contato" },
   ]
   const social = [
     { label: "Instagram", href: site.social.instagram },
@@ -109,9 +110,6 @@ export function SiteFooter() {
             © {new Date().getFullYear()} {site.name}. Todos os direitos reservados.
           </p>
           <div className="flex gap-5">
-            <Link href="/politica-de-privacidade" className="transition-colors hover:text-foreground">
-              Política de Privacidade
-            </Link>
             <span>{site.domain}</span>
           </div>
         </div>
