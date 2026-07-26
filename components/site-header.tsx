@@ -6,6 +6,7 @@ import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { site } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
+import { site, trackWhatsAppClick, trackEmailClick } from "@/lib/site"
 
 const nav = [
   { label: "Quem somos", href: "/#sobre" },
@@ -61,11 +62,12 @@ export function SiteHeader() {
 
         <a
           href={site.whatsapp}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden rounded-full bg-foreground px-5 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90 md:inline-flex"
-        >
-          Fale com a gente
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={trackWhatsAppClick}
+            className="hidden rounded-full bg-foreground px-5 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90 md:inline-flex"
+          >
+            Fale com a gente
         </a>
 
         <button
@@ -96,6 +98,7 @@ export function SiteHeader() {
               href={site.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackWhatsAppClick}
               className="mt-4 inline-flex justify-center rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background"
             >
               Fale com a gente

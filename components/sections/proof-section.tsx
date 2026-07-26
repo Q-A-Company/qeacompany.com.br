@@ -1,6 +1,7 @@
 import { Check, MessageCircle } from "lucide-react"
 import { proofCase } from "@/lib/site-config"
 import { Reveal } from "@/components/reveal"
+import { site, trackWhatsAppClick, trackEmailClick } from "@/lib/site"
 
 export function ProofSection() {
   return (

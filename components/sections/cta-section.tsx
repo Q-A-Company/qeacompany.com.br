@@ -3,6 +3,7 @@ import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 import { site } from "@/lib/site-config"
 import { Reveal } from "@/components/reveal"
+import { site, trackWhatsAppClick, trackEmailClick } from "@/lib/site"
 
 export function CtaSection() {
   return (
@@ -21,6 +22,7 @@ export function CtaSection() {
               href={site.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackWhatsAppClick}
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
             >
               Chamar no WhatsApp
@@ -28,9 +30,10 @@ export function CtaSection() {
             </a>
             <a
               href={`mailto:${site.email}`}
-              className="inline-flex items-center justify-center rounded-full border border-border px-7 py-3.5 text-sm font-medium transition-colors hover:bg-secondary"
-            >
-              {site.email}
+                onClick={trackEmailClick}
+                className="inline-flex items-center justify-center rounded-full border border-border px-7 py-3.5 text-sm font-medium transition-colors hover:bg-secondary"
+              >
+                {site.email}
             </a>
           </div>
         </Reveal>

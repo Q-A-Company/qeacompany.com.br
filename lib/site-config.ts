@@ -6,6 +6,8 @@
 // site — nada de números "hardcoded" espalhados pelos componentes.
 // ============================================================================
 
+import { sendGAEvent } from "@next/third-parties/google"
+
 export const site = {
   name: "Q&A Company",
   domain: "qeacompany.com.br",
@@ -22,6 +24,16 @@ export const site = {
     tiktok: "https://tiktok.com/@qeacompany",
     linkedin: "https://linkedin.com/company/qea-company",
   },
+}
+
+// Rastreamento de conversão (GA4) — chame essas funções no onClick
+// dos botões de contato (WhatsApp / E-mail) em qualquer componente.
+export function trackWhatsAppClick() {
+  sendGAEvent("event", "contato_whatsapp", { method: "WhatsApp" })
+}
+
+export function trackEmailClick() {
+  sendGAEvent("event", "contato_email", { method: "Email" })
 }
 
 // Contador de VGV (Valor Geral de Vendas) — atualize conforme cresce

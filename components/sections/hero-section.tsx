@@ -4,6 +4,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
 import { site } from "@/lib/site-config"
+import { site, trackWhatsAppClick, trackEmailClick } from "@/lib/site"
 
 const container = {
   hidden: {},
@@ -80,6 +81,7 @@ export function HeroSection() {
             href={site.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackWhatsAppClick}
             className="group inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
           >
             Fale com a gente
