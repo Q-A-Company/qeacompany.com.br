@@ -24,12 +24,12 @@ const jsonLd = {
     site.social.tiktok,
     site.social.linkedin,
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5",
-    reviewCount: testimonials.length,
-  },
-  knowsAbout: `R$ ${vgv.displayValue} ${vgv.displayUnit} ${vgv.label}`,
+  knowsAbout: [
+    "produção audiovisual",
+    "marketing digital",
+    "tráfego pago",
+    "desenvolvimento de sites e aplicativos",
+  ],
 }
 
 export default function HomePage() {
