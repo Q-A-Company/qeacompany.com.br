@@ -4,9 +4,8 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
-import { site } from "@/lib/site-config"
+import { site, trackWhatsAppClick, trackEmailClick } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
-import { site, trackWhatsAppClick, trackEmailClick } from "@/lib/site"
 
 const nav = [
   { label: "Quem somos", href: "/#sobre" },

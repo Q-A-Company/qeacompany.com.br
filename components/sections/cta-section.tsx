@@ -1,9 +1,8 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
-import { site } from "@/lib/site-config"
+import { site, trackWhatsAppClick, trackEmailClick } from "@/lib/site-config"
 import { Reveal } from "@/components/reveal"
-import { site, trackWhatsAppClick, trackEmailClick } from "@/lib/site"
 
 export function CtaSection() {
   return (

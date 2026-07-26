@@ -3,8 +3,7 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
-import { site } from "@/lib/site-config"
-import { site, trackWhatsAppClick, trackEmailClick } from "@/lib/site"
+import { site, trackWhatsAppClick, trackEmailClick } from "@/lib/site-config"
 
 const container = {
   hidden: {},
