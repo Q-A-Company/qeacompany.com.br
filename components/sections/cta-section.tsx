@@ -41,10 +41,6 @@ export function CtaSection() {
 
 export function SiteFooter() {
   const nav = [
-    
-  { label: "Quem somos", href: "#sobre" },
-  { label: "Portfólio", href: "#portfolio" },
-  { label: "Cases reais", href: "#cases" },
   { label: "Mídia", href: "/midia" },
   { label: "Marketing", href: "/marketing" },
   { label: "Soluções Digitais", href: "/solucoes-digitais" },

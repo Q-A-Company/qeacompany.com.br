@@ -14,7 +14,6 @@ const nav = [
   { label: "Mídia", href: "/midia" },
   { label: "Marketing", href: "/marketing" },
   { label: "Soluções Digitais", href: "/solucoes-digitais" },
-  { label: "Contato", href: "#contato" },
 ]
 
 export function SiteHeader() {
