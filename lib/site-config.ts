@@ -101,16 +101,16 @@ export const portfolio = [
 
 // Prova social real: caso vídeo → venda (respeitando LGPD nos prints)
 export const proofCase = {
-  context: "Casa parada no mercado havia mais de 19 meses.",
+  context: "Casa parada no mercado há mais de 19 meses.",
   action:
     "Produzimos um vídeo vertical destacando os diferenciais do imóvel e utilizando I.A para reformas!",
   result: "Vendido em 34 dias após a publicação do vídeo.",
   // conversa estilizada (dados sensíveis omitidos conforme LGPD)
   conversation: [
-    { from: "client", text: "Lembra daquele Casa que tava encalhada?" },
+    { from: "client", text: "Lembra daquele casa que estava encalhada?" },
     { from: "us", text: "Lembro sim! O do vídeo da I.A?" },
     { from: "client", text: "Essa mesma. VENDIDA!" },
-    { from: "client", text: "O cliente já estava aqui como Lead, mas só decidiu visitar após ver o vídeo, ele mesmo disse isso!" },
+    { from: "client", text: "O cliente já estava aqui como Lead, mas só decidiu visitar após ver o vídeo!" },
     { from: "us", text: "Incrível! Parabéns pela venda! 👏" },
   ],
 }

@@ -26,11 +26,6 @@ export function ProofSection() {
               <dd className="mt-1 text-lg font-medium leading-relaxed">{proofCase.result}</dd>
             </div>
           </dl>
-
-          <p className="mt-8 flex items-start gap-2 text-xs text-muted-foreground">
-            <MessageCircle className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-            Conversa reproduzida com autorização. Dados pessoais omitidos conforme a LGPD.
-          </p>
         </Reveal>
 
         {/* Print estilizado de WhatsApp */}
