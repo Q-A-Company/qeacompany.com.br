@@ -1,3 +1,5 @@
+"use client"
+
 import { Check, MessageCircle } from "lucide-react"
 import { proofCase, site, trackWhatsAppClick, trackEmailClick } from "@/lib/site-config"
 import { Reveal } from "@/components/reveal"
