@@ -1,17 +1,12 @@
 import type { Metadata } from "next"
-import { ComingSoon } from "@/components/coming-soon"
+import { MidiaContent } from "@/components/midia-content"
 
 export const metadata: Metadata = {
-  title: "Mídia — Produção de Vídeo",
+  title: "Mídia — Produção de Vídeo | Q&A Company",
   description:
-    "Portfólio de produção audiovisual da Q&A Company: vídeos verticais e horizontais que transformam atenção em venda.",
+    "Portfólio de produção audiovisual imobiliária da Q&A Company: vídeos verticais e horizontais que transformam atenção em venda.",
 }
 
 export default function MidiaPage() {
-  return (
-    <ComingSoon
-      title="Mídia que vende."
-      description="Nossa página de portfólio audiovisual está a caminho — com vídeos verticais, horizontais e o case completo de vídeo direto para a venda."
-    />
-  )
+  return <MidiaContent />
 }

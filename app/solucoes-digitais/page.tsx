@@ -1,17 +1,12 @@
 import type { Metadata } from "next"
-import { ComingSoon } from "@/components/coming-soon"
+import { SolucoesDigitaisContent } from "@/components/solucoes-digitais-content"
 
 export const metadata: Metadata = {
-  title: "Soluções Digitais — Sites, Apps e Sistemas",
+  title: "Soluções Digitais — Sites, Apps e Sistemas | Q&A Company",
   description:
-    "Apps, sites institucionais e sistemas sob medida. Conheça o case QEA Imob e outros projetos digitais da Q&A Company.",
+    "Desenvolvimento de sites, aplicativos e sistemas sob medida da Q&A Company. Conheça o case QEA Imob e outros produtos digitais que já colocamos no ar.",
 }
 
 export default function SolucoesDigitaisPage() {
-  return (
-    <ComingSoon
-      title="Soluções digitais sob medida."
-      description="Em breve: o case QEA Imob em destaque, com mockups em dispositivo, a estrutura problema → solução → resultado e outros projetos."
-    />
-  )
+  return <SolucoesDigitaisContent />
 }

@@ -67,7 +67,7 @@ export const pillars = [
     id: "02",
     title: "Marketing",
     description:
-      "Gestão de redes e tráfego pago (Meta, Google Ads, TikTok Ads...) para colocar a sua marca na frente das pessoas certas.",
+      "Gestão de redes e tráfego pago (Meta e Google Ads...) para colocar a sua marca na frente das pessoas certas.",
     href: "/marketing",
   },
   {
