@@ -16,7 +16,7 @@ export const site = {
   description:
     "A Q&A Company une produção audiovisual, marketing e tecnologia para ajudar empresas a serem vistas, lembradas e escolhidas. Estratégia de ponta a ponta, sem terceirizar o que importa.",
   logo: "/brand/logo-white.png",
-  whatsapp: "https://wa.me/5521965559712",
+  whatsapp: "https://wa.me/5541987457088",
   email: "contato@qeacompany.com.br",
   social: {
     instagram: "https://instagram.com/qeacompany",
