@@ -96,7 +96,7 @@ export function SolucoesDigitaisContent() {
               variants={item}
               className="mb-6 inline-flex items-center gap-2 rounded-full border border-border px-4 py-1.5 text-xs uppercase tracking-widest text-muted-foreground"
             >
-              <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
+              <span className="h-1.5 w-1.5 rounded-full bg-highlight" />
               {pageLabel}
             </motion.span>
 
@@ -104,7 +104,7 @@ export function SolucoesDigitaisContent() {
               variants={item}
               className="max-w-4xl text-balance font-sans text-5xl font-semibold leading-[0.95] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
             >
-              Tecnologia que <span className="italic font-serif font-normal">escala</span>.
+              Tecnologia que <span className="text-highlight italic font-serif font-normal">escala</span>.
             </motion.h1>
 
             <motion.p
@@ -121,7 +121,7 @@ export function SolucoesDigitaisContent() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={trackWhatsAppClick}
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
+                className="group inline-flex items-center justify-center gap-2 rounded-full bg-highlight px-7 py-3.5 text-sm font-medium text-highlight-foreground transition-opacity hover:opacity-90"
               >
                 Pedir orçamento
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -172,7 +172,7 @@ export function SolucoesDigitaisContent() {
                 Case em destaque
               </span>
               <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight md:text-4xl">
-                QEA Imob — <span className="italic font-serif font-normal">app sob medida</span>
+                QEA Imob — <span className="text-highlight italic font-serif font-normal">app sob medida</span>
               </h2>
               <dl className="mt-8 space-y-6">
                 <div className="border-l-2 border-border pl-5">
@@ -273,7 +273,7 @@ export function SolucoesDigitaisContent() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={trackWhatsAppClick}
-                  className="group inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
+                  className="group inline-flex items-center justify-center gap-2 rounded-full bg-highlight px-7 py-3.5 text-sm font-medium text-highlight-foreground transition-opacity hover:opacity-90"
                 >
                   Chamar no WhatsApp
                   <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

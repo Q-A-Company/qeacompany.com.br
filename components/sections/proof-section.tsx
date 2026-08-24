@@ -11,7 +11,7 @@ export function ProofSection() {
         <Reveal>
           <span className="text-xs uppercase tracking-widest text-muted-foreground">Case real</span>
           <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight md:text-4xl">
-            Do vídeo direto para a <span className="italic font-serif font-normal">venda</span>.
+            Do vídeo direto para a <span className="text-highlight italic font-serif font-normal">venda</span>.
           </h2>
 
           <dl className="mt-8 space-y-6">

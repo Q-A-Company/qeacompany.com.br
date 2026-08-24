@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { site, trackWhatsAppClick, trackEmailClick } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
@@ -34,15 +33,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
         <Link href="/" className="group flex items-center gap-2.5" aria-label={`${site.name} — página inicial`}>
-          <Image
-            src={site.logo || "/placeholder.svg"}
-            alt=""
-            width={36}
-            height={36}
-            className="h-9 w-9 object-contain"
-            priority
-          />
-          <span className="hidden text-sm font-medium tracking-tight sm:inline">{site.name}</span>
+          <span className="text-shine text-sm font-medium tracking-tight">Q&amp;A Company</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Navegação principal">
@@ -62,7 +53,7 @@ export function SiteHeader() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={trackWhatsAppClick}
-            className="hidden rounded-full bg-foreground px-5 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90 md:inline-flex"
+            className="hidden rounded-full bg-highlight px-5 py-2 text-sm font-medium text-highlight-foreground transition-opacity hover:opacity-90 md:inline-flex"
           >
             Fale com a gente
         </a>
@@ -96,7 +87,7 @@ export function SiteHeader() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={trackWhatsAppClick}
-              className="mt-4 inline-flex justify-center rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background"
+              className="mt-4 inline-flex justify-center rounded-full bg-highlight px-5 py-2.5 text-sm font-medium text-highlight-foreground"
             >
               Fale com a gente
             </a>

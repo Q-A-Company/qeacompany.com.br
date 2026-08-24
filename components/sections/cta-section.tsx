@@ -24,7 +24,7 @@ export function CtaSection() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={trackWhatsAppClick}
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-highlight px-7 py-3.5 text-sm font-medium text-highlight-foreground transition-opacity hover:opacity-90"
             >
               Chamar no WhatsApp
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

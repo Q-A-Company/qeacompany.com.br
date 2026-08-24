@@ -31,7 +31,7 @@ export function PillarsSection() {
                   <div className="flex-1">
                     <h3 className="flex items-center gap-2 text-xl font-medium tracking-tight">
                       {pillar.title}
-                      <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground" />
+                      <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-highlight" />
                     </h3>
                     <p className="mt-2 max-w-md text-pretty leading-relaxed text-muted-foreground">
                       {pillar.description}

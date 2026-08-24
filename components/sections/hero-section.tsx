@@ -56,7 +56,7 @@ export function HeroSection() {
           variants={item}
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-border px-4 py-1.5 text-xs uppercase tracking-widest text-muted-foreground"
         >
-          <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
+          <span className="h-1.5 w-1.5 rounded-full bg-highlight" />
           {site.tagline}
         </motion.span>
 
@@ -64,7 +64,7 @@ export function HeroSection() {
           variants={item}
           className="max-w-4xl text-balance font-sans text-5xl font-semibold leading-[0.95] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
         >
-          Transformando desafios em <span className="italic font-serif font-normal">resultados</span>.
+          Transformando desafios em <span className="text-highlight italic font-serif font-normal">resultados</span>.
         </motion.h1>
 
         <motion.p
@@ -81,7 +81,7 @@ export function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={trackWhatsAppClick}
-            className="group inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
+            className="group inline-flex items-center justify-center gap-2 rounded-full bg-highlight px-7 py-3.5 text-sm font-medium text-highlight-foreground transition-opacity hover:opacity-90"
           >
             Fale com a gente
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

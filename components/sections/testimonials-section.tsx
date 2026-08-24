@@ -81,7 +81,7 @@ export function TestimonialsSection() {
               }}
               aria-label={`Ir para depoimento ${i + 1}`}
               className={
-                (i === index ? "w-8 bg-foreground" : "w-4 bg-border") +
+                (i === index ? "w-8 bg-highlight" : "w-4 bg-border") +
                 " h-1 rounded-full transition-all"
               }
             />

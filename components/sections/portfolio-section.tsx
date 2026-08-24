@@ -38,7 +38,7 @@ export function PortfolioSection() {
                     <h3 className="text-sm font-medium tracking-tight">{item.title}</h3>
                     <p className="mt-1 text-xs text-muted-foreground">{item.category}</p>
                   </div>
-                  <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground" />
+                  <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-highlight" />
                 </div>
               </Link>
             </Reveal>
