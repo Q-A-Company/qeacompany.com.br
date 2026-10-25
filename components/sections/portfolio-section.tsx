@@ -10,33 +10,45 @@ export function PortfolioSection() {
   const videosRef = useRef<(HTMLVideoElement | null)[]>([])
 
   useEffect(() => {
-    const playVideos = () => {
-      videosRef.current.forEach((video) => {
-        if (!video) return
+    const videos = videosRef.current.filter(
+      (video): video is HTMLVideoElement => video !== null
+    )
 
-        video.muted = true
-        video.defaultMuted = true
-        video.playsInline = true
-        video.loop = true
-        video.autoplay = true
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const video = entry.target as HTMLVideoElement
 
-        if (video.paused) {
-          video.play().catch((error) => {
-            console.warn(
-              `Não foi possível reproduzir o vídeo ${video.currentSrc}:`,
-              error
-            )
-          })
-        }
-      })
-    }
+          if (entry.isIntersecting) {
+            if (!video.src && video.dataset.src) {
+              video.src = video.dataset.src
+              video.load()
+            }
 
-    playVideos()
+            video.muted = true
 
-    document.addEventListener("visibilitychange", playVideos)
+            video.play().catch((error) => {
+              console.warn(
+                "Erro ao reproduzir vídeo:",
+                video.dataset.src,
+                error
+              )
+            })
+          } else {
+            video.pause()
+          }
+        })
+      },
+      {
+        rootMargin: "200px",
+        threshold: 0.1,
+      }
+    )
+
+    videos.forEach((video) => observer.observe(video))
 
     return () => {
-      document.removeEventListener("visibilitychange", playVideos)
+      observer.disconnect()
     }
   }, [])
 
@@ -72,13 +84,13 @@ export function PortfolioSection() {
                       videosRef.current[i] = el
                     }}
                     className="absolute inset-0 h-full w-full object-contain"
-                    src={item.video}
+                    data-src={item.video}
                     poster={item.image}
                     autoPlay
                     muted
                     loop
                     playsInline
-                    preload="auto"
+                    preload="none"
                     aria-label={`Vídeo ${i + 1} do portfólio da Q&A Company`}
                   />
 
