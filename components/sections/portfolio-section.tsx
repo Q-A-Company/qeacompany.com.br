@@ -17,14 +17,22 @@ export function PortfolioSection() {
         video.muted = true
         video.defaultMuted = true
         video.playsInline = true
+        video.loop = true
+        video.autoplay = true
 
-        video.play().catch((error) => {
-          console.warn("Falha no autoplay:", error)
-        })
+        if (video.paused) {
+          video.play().catch((error) => {
+            console.warn(
+              `Não foi possível reproduzir o vídeo ${video.currentSrc}:`,
+              error
+            )
+          })
+        }
       })
     }
 
     playVideos()
+
     document.addEventListener("visibilitychange", playVideos)
 
     return () => {
@@ -71,7 +79,7 @@ export function PortfolioSection() {
                     loop
                     playsInline
                     preload="auto"
-                    aria-label={`Vídeo do portfólio ${i + 1} da Q&A Company`}
+                    aria-label={`Vídeo ${i + 1} do portfólio da Q&A Company`}
                   />
 
                   <span className="absolute left-3 top-3 z-10 rounded-full bg-black/75 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
@@ -82,7 +90,7 @@ export function PortfolioSection() {
                     href={item.video}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`Abrir vídeo ${i + 1}`}
+                    aria-label={`Abrir vídeo ${i + 1} em uma nova aba`}
                     className="absolute bottom-3 right-3 z-10 rounded-full bg-black/70 p-2 text-white opacity-0 transition-opacity group-hover:opacity-100"
                   >
                     <ArrowUpRight className="h-4 w-4" />

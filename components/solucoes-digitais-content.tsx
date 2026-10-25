@@ -240,7 +240,7 @@ export function SolucoesDigitaisContent() {
                         alt={`${proj.title} — projeto de Soluções Digitais da Q&A Company`}
                         fill
                         sizes="(max-width: 640px) 100vw, 50vw"
-                        className="object-cover grayscale transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                        className="object-cover transition-all duration-500 group-hover:scale-105"
                       />
                     </div>
                     <div className="p-5">
