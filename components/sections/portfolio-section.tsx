@@ -10,9 +10,25 @@ export function PortfolioSection() {
   const videosRef = useRef<(HTMLVideoElement | null)[]>([])
 
   useEffect(() => {
-    const videos = videosRef.current.filter(
-      (video): video is HTMLVideoElement => video !== null
-    )
+    const videos = videosRef.current
+
+    const tryPlay = (video: HTMLVideoElement) => {
+      video.muted = true
+      video.defaultMuted = true
+      video.playsInline = true
+
+      const result = video.play()
+
+      if (result) {
+        result.catch((error) => {
+          console.error(
+            "Falha no autoplay:",
+            video.currentSrc || video.src,
+            error
+          )
+        })
+      }
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -20,36 +36,29 @@ export function PortfolioSection() {
           const video = entry.target as HTMLVideoElement
 
           if (entry.isIntersecting) {
-            if (!video.src && video.dataset.src) {
-              video.src = video.dataset.src
+            if (video.readyState >= 2) {
+              tryPlay(video)
+            } else {
+              video.addEventListener(
+                "canplay",
+                () => tryPlay(video),
+                { once: true }
+              )
               video.load()
             }
-
-            video.muted = true
-
-            video.play().catch((error) => {
-              console.warn(
-                "Erro ao reproduzir vídeo:",
-                video.dataset.src,
-                error
-              )
-            })
           } else {
             video.pause()
           }
         })
       },
-      {
-        rootMargin: "200px",
-        threshold: 0.1,
-      }
+      { threshold: 0.1 }
     )
 
-    videos.forEach((video) => observer.observe(video))
+    videos.forEach((video) => {
+      if (video) observer.observe(video)
+    })
 
-    return () => {
-      observer.disconnect()
-    }
+    return () => observer.disconnect()
   }, [])
 
   return (
@@ -84,13 +93,13 @@ export function PortfolioSection() {
                       videosRef.current[i] = el
                     }}
                     className="absolute inset-0 h-full w-full object-contain"
-                    data-src={item.video}
+                    src={item.video}
                     poster={item.image}
                     autoPlay
                     muted
                     loop
                     playsInline
-                    preload="none"
+                    preload="auto"
                     aria-label={`Vídeo ${i + 1} do portfólio da Q&A Company`}
                   />
 
