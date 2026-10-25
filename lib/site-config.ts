@@ -12,9 +12,9 @@ export const site = {
   name: "Q&A Company",
   domain: "qeacompany.com.br",
   slogan: "Transformando desafios em resultados.",
-  tagline: "Mídia • Marketing • Soluções Digitais",
+  tagline: "Mídia • Captação e edição de vídeo",
   description:
-    "A Q&A Company une produção audiovisual, marketing e tecnologia para ajudar empresas a serem vistas, lembradas e escolhidas. Estratégia de ponta a ponta, sem terceirizar o que importa.",
+    "A Q&A Company é uma produtora audiovisual que ajuda empresas a serem vistas, lembradas e escolhidas. Do planejamento à edição final, sem terceirizar o que importa.",
   logo: "/brand/logo-white.png",
   whatsapp: "https://wa.me/5541987457088",
   email: "contato@qeacompany.com.br",
@@ -58,58 +58,73 @@ export const stats = [
 export const pillars = [
   {
     id: "01",
-    title: "Mídia",
+    title: "Captação",
     description:
-      "Produção audiovisual que transforma atenção em resultado. Vídeos verticais e horizontais institucionais ou para venda.",
-    href: "/midia",
+      "Filmagem profissional que transforma atenção em resultado. Vídeos verticais e horizontais, institucionais ou para venda..",
+    href: "",
   },
   {
     id: "02",
-    title: "Marketing",
+    title: "Edição",
     description:
-      "Gestão de redes e tráfego pago (Meta e Google Ads...) para colocar a sua marca na frente das pessoas certas.",
-    href: "/marketing",
+      "Do material bruto ao vídeo final: cortes, ritmo, cor, efeitos e som para entregar um conteúdo pronto para publicar.",
+    href: "",
   },
   {
     id: "03",
-    title: "Soluções Digitais",
+    title: "Conteúdo para redes",
     description:
-      "Sites, apps e sistemas sob medida. Do conceito ao produto no ar, com tecnologia que escala.",
-    href: "/solucoes-digitais",
+      "Vídeos pensados para Reels, TikTok, Youtube e Shorts, com linguagem direta para prender o público e colocar a sua marca na frente das pessoas certas.",
+    href: "",
   },
 ]
 
 // Portfólio em destaque (mix das 3 áreas)
+
+const R2 = "https://pub-c152309086b74575813789c84adcb467.r2.dev";
+
 export const portfolio = [
   {
-    title: "Campanha imobiliária vertical",
-    category: "Mídia",
-    format: "Vertical",
-    image: "/portfolio/video-vertical-1.png",
-    href: "/midia",
+    video: `${R2}/alphaville-reels.mp4`,
+    image: `${R2}/capas/alphaville-reels.jpg`,
+    href: "",
+  },
+    {
+    video: `${R2}/mansoes-ia-pronto-2.mp4`,
+    image: `${R2}/capas/mansoes-ia-pronto-2.jpg`,
+    href: "",
+  },
+    {
+    video: `${R2}/pedra-de-itauna-final.mp4`,
+    image: `${R2}/capas/pedra-de-itauna-final.jpg`,
+    href: "",
+  },
+      {
+    video: `${R2}/PARQUE DAS PALMEIRAS-FINAL.mp4`,
+    href: "",
   },
   {
-    title: "Institucional para lançamento",
-    category: "Mídia",
-    format: "Horizontal",
-    image: "/portfolio/video-horizontal-1.png",
-    href: "/midia",
+    video: `${R2}/arouca-final.mp4`,
+    image: `${R2}/capas/arouca-final.jpg`,
+    href: "",
   },
   {
-    title: "Gestão de conteúdo e social",
-    category: "Marketing",
-    format: "Social",
-    image: "/portfolio/marketing-1.png",
-    href: "/marketing",
+    video: `${R2}/novo-leblon-final.mp4`,
+    image: `${R2}/capas/novo-leblon-final.jpg`,
+    href: "",
   },
   {
-    title: "QEA Imob — app sob medida",
-    category: "Soluções Digitais",
-    format: "Produto",
-    image: "/portfolio/digital-1.png",
-    href: "/solucoes-digitais",
+    video: `${R2}/rio-mar-final.mp4`,
+    image: `${R2}/capas/rio-mar-final.jpg`,
+    href: "",
   },
-]
+  {
+    video: `${R2}/villagio-felicita-ia-final.mp4`,
+    image: `${R2}/capas/villagio-felicita-ia-final.jpg`,
+    href: "",
+  },
+];
+
 
 // Prova social real: caso vídeo → venda (respeitando LGPD nos prints)
 export const proofCase = {
@@ -137,14 +152,14 @@ export const testimonials = [
   },
   {
     quote:
-      "A estratégia do Trafego trouxe leads realmente qualificados!",
+      "O vídeo de mobiliando a casa vazia fez a retenção do público disparar e leads quentes chegaram.",
     author: "Cliente do setor imobiliário",
     role: "Imobiliária parceira",
   },
   {
     quote:
-      "O app que desenvolveram organizou nossa pauta de corretores inteira. Ganhamos velocidade na distribuição das fichas.",
-    author: "Cliente do setor imobiliário",
-    role: "Imobiliária parceira",
+      "Souberam traduzir a nossa operação em imagens profissionais. O material fortaleceu a nossa credibilidade com clientes e parceiros.",
+    author: "Cliente do setor naval",
+    role: "Empresa do ramo naval",
   },
 ]

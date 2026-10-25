@@ -71,7 +71,7 @@ export function HeroSection() {
           variants={item}
           className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg"
         >
-          Somos a {site.name}: mídia, marketing e soluções digitais para marcas que
+          Somos a {site.name}: mídia para marcas que
           querem crescer com estratégia e provar resultado.
         </motion.p>
 

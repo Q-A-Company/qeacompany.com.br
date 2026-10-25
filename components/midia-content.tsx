@@ -232,7 +232,7 @@ export function MidiaContent() {
                               alt={`${item.title} — projeto de Mídia da Q&A Company`}
                               fill
                               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                              className="object-cover grayscale transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                              className="object-cover transition-all duration-500 group-hover:scale-105"
                             />
                             <span className="absolute left-2.5 top-2.5 rounded-full bg-background/85 px-2.5 py-1 text-[11px] font-medium backdrop-blur-sm">
                               {item.format}

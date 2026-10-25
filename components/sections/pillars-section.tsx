@@ -11,12 +11,12 @@ export function PillarsSection() {
           <Reveal>
             <span className="text-xs uppercase tracking-widest text-muted-foreground">Quem somos</span>
             <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight md:text-4xl">
-              Três frentes, uma obsessão: resultado.
+              Mídia e uma obsessão: resultado.
             </h2>
             <p className="mt-5 max-w-md text-pretty leading-relaxed text-muted-foreground">
-              A Q&A Company une produção audiovisual, marketing e tecnologia para
-              ajudar empresas a serem vistas, lembradas e escolhidas. Estratégia de
-              ponta a ponta, sem terceirizar o que importa.
+              A Q&A Company é uma produtora audiovisual que ajuda empresas a serem
+              vistas, lembradas e escolhidas. Do planejamento à edição final,
+              sem terceirizar o que importa.
             </p>
           </Reveal>
 

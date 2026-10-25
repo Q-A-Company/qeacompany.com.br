@@ -45,9 +45,9 @@ export function CtaSection() {
 
 export function SiteFooter() {
   const nav = [
-  { label: "Mídia", href: "/midia" },
-  { label: "Marketing", href: "/marketing" },
-  { label: "Soluções Digitais", href: "/solucoes-digitais" },
+  { label: "Portfólio", href: "#portfolio" },
+  { label: "Case Real", href: "#cases" },
+  { label: "Depoimentos", href: "#depoimentos" },
   { label: "Contato", href: "#contato" },
   ]
   const social = [
